@@ -32,7 +32,6 @@ app.get('/object/:mykey', (req, res, next) => {
                 if (Number.isInteger(timestamp)) {
                     let datetime = new Date(timestamp);
                     query = query.where('timestamp').lte(datetime);
-                    console.log(datetime);
                 }
                 query
                     .sort('-timestamp')
@@ -83,7 +82,6 @@ app.post('/object', (req, res, next) => {
                             value: value
                         });
                         version.save();
-                        console.log(version);
                         result = {
                             key: mykey.key,
                             value: version.value,
