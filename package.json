@@ -1,0 +1,19 @@
+{
+  "name": "vaultdragontest",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "node public/index.js",
+    "test": "jest"
+  },
+  "author": "Quentin Pan",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "request": "^2.88.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.1"
+  }
+}
